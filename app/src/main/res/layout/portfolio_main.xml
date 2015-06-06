@@ -16,7 +16,7 @@
         android:gravity="center"
         android:text="@string/nanodegree_apps"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textSize="16sp"/>
+        android:textSize="@dimen/textSize"/>
 
     <Button
         android:id="@+id/spotifyStreamer"
@@ -25,10 +25,11 @@
         android:layout_below="@+id/nanodegree_text"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
         android:background="@color/orange"
+        android:gravity="center"
+        android:minWidth="@dimen/minButtonWidth"
+        android:paddingLeft="@dimen/buttonLeftPadding"
+        android:paddingRight="@dimen/buttonRightPadding"
         android:text="@string/spotify_streamer"/>
 
     <Button
@@ -37,11 +38,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/spotifyStreamer"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:gravity="center"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:layout_marginTop="@dimen/buttonTopMargin"
         android:background="@color/orange"
+        android:gravity="center"
+        android:minWidth="@dimen/minButtonWidth"
+        android:paddingLeft="@dimen/buttonLeftPadding"
+        android:paddingRight="@dimen/buttonRightPadding"
         android:text="@string/scores_app"/>
 
     <Button
@@ -50,11 +52,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/scoresApp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:gravity="center"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:layout_marginTop="@dimen/buttonTopMargin"
         android:background="@color/orange"
+        android:gravity="center"
+        android:minWidth="@dimen/minButtonWidth"
+        android:paddingLeft="@dimen/buttonLeftPadding"
+        android:paddingRight="@dimen/buttonRightPadding"
         android:text="@string/library_app"/>
 
     <Button
@@ -63,11 +66,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/libraryApp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:gravity="center"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:layout_marginTop="@dimen/buttonTopMargin"
         android:background="@color/orange"
+        android:gravity="center"
+        android:minWidth="@dimen/minButtonWidth"
+        android:paddingLeft="@dimen/buttonLeftPadding"
+        android:paddingRight="@dimen/buttonRightPadding"
         android:text="@string/build_it_bigger"/>
 
     <Button
@@ -76,11 +80,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/builditBigger"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:gravity="center"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:layout_marginTop="@dimen/buttonTopMargin"
         android:background="@color/orange"
+        android:gravity="center"
+        android:minWidth="@dimen/minButtonWidth"
+        android:paddingLeft="@dimen/buttonLeftPadding"
+        android:paddingRight="@dimen/buttonRightPadding"
         android:text="@string/xyz_reader"/>
 
     <Button
@@ -89,11 +94,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/xyzReader"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:gravity="center"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:layout_marginTop="@dimen/buttonTopMargin"
         android:background="@color/accent_material_light"
+        android:gravity="center"
+        android:minWidth="@dimen/minButtonWidth"
+        android:paddingLeft="@dimen/buttonLeftPadding"
+        android:paddingRight="@dimen/buttonRightPadding"
         android:text="@string/capstone_project"/>
 
 </RelativeLayout>

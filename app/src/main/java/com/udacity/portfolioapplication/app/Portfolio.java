@@ -17,11 +17,14 @@ public class Portfolio extends Activity {
     private Button mBuildButton;
     private Button mReaderButton;
     private Button mCapstoneButton;
+    private Toast mToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.portfolio_main);
+
+        mToast = new Toast(getApplicationContext());
 
         mSpotifyButton = (Button) findViewById(R.id.spotifyStreamer);
         mSpotifyButton.setOnClickListener(new View.OnClickListener() {
@@ -96,6 +99,10 @@ public class Portfolio extends Activity {
     }
 
     private void displayToast(int textId) {
-        Toast.makeText(getApplicationContext(), getString(textId), Toast.LENGTH_SHORT).show();
+        if(mToast != null) {
+            mToast.cancel();
+        }
+        mToast = Toast.makeText(getApplicationContext(), getString(textId), Toast.LENGTH_SHORT);
+        mToast.show();
     }
 }
